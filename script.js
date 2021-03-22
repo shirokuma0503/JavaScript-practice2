@@ -1,2 +1,5 @@
 let num = 10;
-window.alert(num > 1);
+
+if (num % 2 == 0) {
+  window.alert(num + 'は偶数です');
+}
