@@ -1,1 +1,2 @@
-window.alert(".jsファイルに書き込みしてみました！");
+let num = 10;
+window.alert(num > 1);
