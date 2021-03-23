@@ -1,11 +1,16 @@
-let num =50;
+let point = 3;
 
-if (num >= 0) {
-  if (num % 5 == 0) {
-    window.alert(num + 'は5の倍数です');
-  } else {
-    window.alert(num + 'は5の倍数ではありません');
-  }
-} else {
-  window.alert('0以上の場合のみ判定します');
- }
+switch (point) {
+  case 1:
+    window.alert('ざんねん・・・');
+    break;
+  case 2:
+    window.alert('おしい！');
+    break;
+  case 3:
+    window.alert('おめでとう！');
+    break;
+  default:
+    window.alert('1~3以外は無効だよ');
+    break;
+}
