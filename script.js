@@ -1,9 +1,11 @@
-let num = 10;
-let i = 1;
+var num = 0;
 
-while (i <= num) {
-  document.write(i + '<br>');
-  i++;
+for (var i = 0; i < 5; i++) {
+  num += i;
+  if (num > 10) {
+    break;
+  }
 }
+window.alert('合計値が10を超えたよ、iの値は' + i );
 
-//while文　10になるまで繰り返す処理
+//break文で処理を抜ける
