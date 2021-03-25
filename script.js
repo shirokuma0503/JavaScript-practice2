@@ -1,7 +1,10 @@
-for (var i = 1; i <= 5; i++) {
-  if (i== 4) {
-    continue;
+for (var i = 1; i <= 3; i++) {
+  for (var j = 1; j <= 3; j++) {
+    if (i == 2) {
+      break;
+    }
+    document.write(i + '*' + j + ' = ' + (i * j) + '<br>');
   }
-  document.write(i + 'は回目の処理です。' + '<br>');
 }
-//continue文で4回目の処理をスキップ
+
+//多重ループとbreak文を使う
