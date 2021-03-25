@@ -1,11 +1,7 @@
-var num = 0;
-
-for (var i = 0; i < 5; i++) {
-  num += i;
-  if (num > 10) {
-    break;
+for (var i = 1; i <= 5; i++) {
+  if (i== 4) {
+    continue;
   }
+  document.write(i + 'は回目の処理です。' + '<br>');
 }
-window.alert('合計値が10を超えたよ、iの値は' + i );
-
-//break文で処理を抜ける
+//continue文で4回目の処理をスキップ
