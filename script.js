@@ -1,8 +1,11 @@
-outside: for (var i = 1; i <= 3; i++) {
-  while (true) {
-    document.write(i + '<br>');
-    continue outside;
-  }
+var i = 1;
+
+try {
+  i = i + j;
+} catch(e) {
+  window.alert(e);
+} finally {
+  window.alert('例外処理しましたよ。');
 }
 
-//ラベル付きcontinue文を使う
+//例外処理
