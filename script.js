@@ -1,13 +1,4 @@
-var str = 'shirokuma@example.com';
+var str = 'shiroくま';
 
-// 何番目に「shirokuma」がいるか
-document.write('example = ' + str.indexOf('shirokuma'));
-document.write('</br>');
-// 8文字目以降を検索した時の「example」の位置
-document.write('example = ' + str.indexOf('example', 7));
-document.write('</br>');
-// 後ろから数えて何番目に「example」がいるか
-document.write('example = ' + str.lastIndexOf('example'));
-document.write('</br>');
-
-// 0から数え始めることに注意
+// 0から数え始めて、「shiroくま」の2〜番目が取り出される
+document.write(str.substring(2,5));
