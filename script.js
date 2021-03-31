@@ -1,11 +1,6 @@
-var i = 1;
+var str1 = 'JavaScript';
+var str2 = '文字列の長さ';
 
-try {
-  i = i + j;
-} catch(e) {
-  window.alert(e);
-} finally {
-  window.alert('例外処理しましたよ。');
-}
-
-//例外処理
+document.write('「' + str1 + '」の長さは' + str1.length + 'です。');
+document.write('</br>');
+document.write('「' + str2 + '」の長さは' + str2.length + 'です。');
