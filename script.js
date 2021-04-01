@@ -1,4 +1,2 @@
-var ary = [5, 10, 100, 500, 1000];
-document.write(ary.sort(function(a,b) {
-    return a - b;
-}));
+var name1 = ['しろくま', 'くろくま', 'こぐま'];
+document.write(name1.join('/') + ('<br>'));
