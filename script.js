@@ -1,2 +1,4 @@
 var name1 = ['しろくま', 'くろくま', 'こぐま'];
-document.write(name1.join('/') + ('<br>'));
+var ary = name1.slice(1, 3);
+
+document.write('ary = ' + ary + '<br>');
