@@ -1,7 +1,9 @@
 var name1 = ['しろくま', 'くろくま', 'こぐま'];
 
-for(var i = 0; i < name1.length; i++) {
-  document.write(name1[i] + 'さん！' + '<br>');
-}
+var name2 = [];
 
-document.write('name1 = ' + name1 + '<br>');
+name2 = name1;
+
+name2[0] = 'まっしろくま';
+
+window.alert(name1[0]);
