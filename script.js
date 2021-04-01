@@ -1,3 +1,4 @@
-var val = ['しろくま', 'くろくま', 'あかくま', 'あおくま', 'こぐま'];
-document.write(val.sort() + '</br>'); //sortメソッドで並べられた配列の中身
-document.write(val); //配列の中身
+var ary = [5, 10, 100, 500, 1000];
+document.write(ary.sort(function(a,b) {
+    return a - b;
+}));
