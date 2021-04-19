@@ -1,3 +1,6 @@
-const arr = ['くま', 'しろくま', 'こぐま'];
+const first = ['し', 'ろ'];
+const second = ['く', 'ま'];
 
-document.write(`私は${arr[1]}です`);
+const bear = first.concat(second);
+
+document.write(bear);
