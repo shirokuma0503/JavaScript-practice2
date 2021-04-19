@@ -1,10 +1,11 @@
 const me = {
   name: 'しろくま',
-  type: 'くま',
+  type (arg) {
+    return'くま';
+  }
 }
 
-document.write(me.name);
+const value = me.type('ひぐま');
+document.write(value);
 
-//const~ オブジェクトの初期化・生成
-//{}の中にプロパティを定義
-//プロパティ名：値,　(key:value)で定義できる
+//3~5　はオブジェクトのメソッドを定義している
