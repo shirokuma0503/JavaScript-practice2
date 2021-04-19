@@ -1,14 +1,16 @@
-//areaという関数を定義
-function area(a, b) {
-  result = a + b;
-  window.alert(result);
+function PersonInfo(firstName, lastName, old, tel) {
+  //プロパティの定義
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.old = old;
+  this.tel = tel;
+
+  this.getData = function() {
+    return '「姓」' + this.lastName + '「名」' + this.firstName +
+           '「年齢」' + this.old + '「電話」' + this.tel;
+  };
 }
 
-//オブジェクト生成
-var obj = new Object;
+var p1 = new PersonInfo('くま', 'しろ', '10', '1010101010');
 
-//プロパティfにareaという関数を格納
-obj.f = area;
-
-//メソッドfの呼びだし
-obj.f(50, 50);
+document.write(p1.getData());
