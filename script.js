@@ -1,9 +1,9 @@
-var name1 = ['しろくま', 'くろくま', 'こぐま'];
+var obj = new Object();
 
-var name2 = [];
+obj.name = 'シロクマ';
+obj.old = 10;
 
-name2 = name1;
+document.write(obj.name);
+document.write(obj.old);
 
-name2[0] = 'まっしろくま';
-
-window.alert(name1[0]);
+//匿名オブジェクト
