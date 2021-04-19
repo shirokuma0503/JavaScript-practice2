@@ -1,9 +1,14 @@
-var obj = new Object();
+//areaという関数を定義
+function area(a, b) {
+  result = a + b;
+  window.alert(result);
+}
 
-obj.name = 'シロクマ';
-obj.old = 10;
+//オブジェクト生成
+var obj = new Object;
 
-document.write(obj.name);
-document.write(obj.old);
+//プロパティfにareaという関数を格納
+obj.f = area;
 
-//匿名オブジェクト
+//メソッドfの呼びだし
+obj.f(50, 50);
