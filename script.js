@@ -1,16 +1,12 @@
-function PersonInfo(firstName, lastName, old, tel) {
-  //プロパティの定義
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.old = old;
-  this.tel = tel;
-
-  this.getData = function() {
-    return '「姓」' + this.lastName + '「名」' + this.firstName +
-           '「年齢」' + this.old + '「電話」' + this.tel;
-  };
+const ageToType = (age) => {
+  if(age < 3) {
+    return '赤ちゃん';
+  } else if(age < 18) {
+    return '大人';
+  } else if(age < 65) {
+    return 'お年寄り';
+  }
 }
 
-var p1 = new PersonInfo('くま', 'しろ', '10', '1010101010');
-
-document.write(p1.getData());
+const type = ageToType(10);
+document.write(type);
