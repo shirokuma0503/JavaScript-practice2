@@ -1,14 +1,10 @@
-const fizzBuzz = (x) => {
-  if(x % 15 == 0) {
-    return '15でわりきれる';
-  } else if(x % 3 === 0) {
-    return '3でわりきれる';
-  } else if(x % 5 === 0) {
-    return '5でわりきれる';
-  }
+const me = {
+  name: 'しろくま',
+  type: 'くま',
 }
 
-for (let i = 1; i <= 100; i++) {
-  document.write(fizzBuzz(i));
-  document.write('<br/>');
-}
+document.write(me.name);
+
+//const~ オブジェクトの初期化・生成
+//{}の中にプロパティを定義
+//プロパティ名：値,　(key:value)で定義できる
