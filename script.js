@@ -1,11 +1,3 @@
-const me = {
-  name: 'しろくま',
-  type (arg) {
-    return'くま';
-  }
-}
+const arr = ['くま', 'しろくま', 'こぐま'];
 
-const value = me.type('ひぐま');
-document.write(value);
-
-//3~5　はオブジェクトのメソッドを定義している
+document.write(`私は${arr[1]}です`);
